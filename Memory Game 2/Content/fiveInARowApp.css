@@ -1,0 +1,62 @@
+﻿.row{
+    
+}
+.tile{
+    height:40px;
+    width:40px;
+    background-color:#8d8d8d;
+    margin:2px;
+    float:left;
+    border-radius:5px;
+}
+#infoBar{
+    margin-right:20px
+}
+
+.RedSymbol{
+    background-color:#e44e4e !important;
+}
+
+.BlueSymbol{
+    background-color:#7cc5e5 !important;
+}
+
+.lastMarked{
+    border: 4px solid black;
+}
+
+#matchDesc{
+    background-color:#d1dce1;
+    padding:10px;
+    border-radius:5px;
+    width:570px;
+    margin-bottom:10px;
+    height:90px;
+}
+
+#matchDesc > div{
+    width:50%;
+    float:left;
+    border: 2px solid;
+    padding:10px;
+}
+
+#redPlayer{
+}
+
+#bluePlayer{
+    text-align:right;
+}
+
+#redProgressBar .ui-progressbar-value{
+    background: #e44e4e !important;
+}
+
+#blueProgressBar .ui-progressbar-value{
+    background: #7cc5e5 !important;
+    float: right;
+}
+
+#redName #blueName{
+    display:block;
+}

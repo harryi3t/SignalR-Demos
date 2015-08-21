@@ -1,0 +1,55 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+}
+
+@section head{
+    <link href="~/Content/fiveInARowApp.css" rel="stylesheet" />
+    <link href="~/Content/themes/base/all.css" rel="stylesheet" />
+    <script src="~/Scripts/jquery.signalR-2.2.0.min.js"></script>
+    <script src="~/Signalr/hubs"></script>
+    <script src="~/Scripts/fiveInARowApp.js"></script>
+}
+<br /><br />
+<div ng-app="game" class="col-lg-12">
+
+    <h2 id="name">User: </h2> 
+    <div class="row col-md-2 col-sm-2" id="infoBar">
+        <div>
+            <input id="username" class="form-control" />
+            <span class="help-block" id="alert">
+                Please enter your name and click <strong>Join</strong> to play.
+            </span>
+            <button class="btn btn-primary" id="join">Join</button>
+
+        </div>
+    </div>
+
+    <div class="row col-md-10 col-sm-10" ng-controller="boardController" id="board">
+        <button id="loadButton" class="hidden" ng-click="loadBoard()">Load</button>
+        <button id="resetButton" class="hidden" ng-click="resetBoard()">Load</button>
+
+        <div class="container">
+            <div id="matchDesc">
+                <div id="redPlayer">
+                    <span id="redName"></span>
+                    <div id="redProgressBar" class="progressbars"></div>
+                </div>
+                <div id="bluePlayer">
+                    <span id="blueName"></span>
+                    <div id="blueProgressBar"></div>
+                </div>
+            </div>
+
+            <div class="row boardRow" ng-repeat="row in game.Rows" ng-init="x=$index" >
+                <div ng-repeat="tile in row track by $index" ng-class="returnClass({{x}},{{$index}})"
+                     id="tile-{{x}}-{{$index}}"></div>
+            </div>
+        </div>
+    </div>
+
+    <div id="dialog-message" title="Game Over">
+        <p id="modal-message">
+        </p>
+    </div>
+</div>

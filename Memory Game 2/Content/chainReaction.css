@@ -1,0 +1,35 @@
+﻿.ball{
+    display:block;
+    height:30px;
+    width:30px;
+    border-radius:50%;
+    position:absolute;
+    
+    background: #ff1a00; /* Old browsers */
+    background: -moz-radial-gradient(center, ellipse cover,  #ff1a00 2%, #8c0200 52%, #8c0200 97%, #8c0200 98%); /* FF3.6+ */
+    background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(2%,#ff1a00), color-stop(52%,#8c0200), color-stop(97%,#8c0200), color-stop(98%,#8c0200)); /* Chrome,Safari4+ */
+    background: -webkit-radial-gradient(center, ellipse cover,  #ff1a00 2%,#8c0200 52%,#8c0200 97%,#8c0200 98%); /* Chrome10+,Safari5.1+ */
+    background: -o-radial-gradient(center, ellipse cover,  #ff1a00 2%,#8c0200 52%,#8c0200 97%,#8c0200 98%); /* Opera 12+ */
+    background: -ms-radial-gradient(center, ellipse cover,  #ff1a00 2%,#8c0200 52%,#8c0200 97%,#8c0200 98%); /* IE10+ */
+    background: radial-gradient(ellipse at center,  #ff1a00 2%,#8c0200 52%,#8c0200 97%,#8c0200 98%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff1a00', endColorstr='#8c0200',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+    
+}
+
+#ball-1{
+    float:left;
+}
+
+#ball-2{
+    float:left;
+    margin-left:14px;
+}
+
+#ball-3{
+    float:left;
+    margin-top:14px;
+    margin-left:7px;
+}
+
+#red-ball{
+}
